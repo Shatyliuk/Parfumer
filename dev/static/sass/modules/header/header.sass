@@ -1,0 +1,150 @@
+.header-block
+  margin-bottom: 30px
+  .header-logo
+    display: inline-block
+    vertical-align: bottom
+    margin-right: 124px
+    line-height: 45px
+    position: relative
+    a
+      font-size: 76px
+      color: $orangeColor
+      font-family: Pacifico-Regular, sans-serif
+      transition: all 0.3s ease-in-out
+      &:hover
+        color: darken($orangeColor, 15%)
+    span
+      font-size: 14px
+      position: absolute
+      left: 155px
+      top: 40px
+      text-transform: uppercase
+      font-family: pfdindisplaypro-reg, sans-serif
+  .header-contacts
+    display: inline-block
+    .header-contacts_left
+      display: inline-block
+      vertical-align: top
+      margin-right: 100px
+      a
+        display: block
+        font-size: 24px
+        color: #000000
+        border-bottom: 2px solid transparent
+        transition: all 0.5s ease-in-out
+        &:last-child
+          margin-top: 10px
+        &:before
+          content: ''
+          display: inline-block
+          background: url("../img/general/phone.png")
+          width: 18px
+          height: 18px
+          background-size: 100%
+          margin-right: 20px
+        &:hover
+          border-bottom-color: $pinkColor
+    .header-contacts_right
+      display: inline-block
+      vertical-align: top
+      margin-right: 100px
+      margin-top: 6px
+      .social-links
+        display: inline-block
+        .social-link
+          display: inline-block
+          width: 20px
+          height: 20px
+          margin-right: 10px
+          margin-top: 16px
+          transition: all 0.2s ease-in-out
+          &.social-link-wapp
+            background: url("../img/general/wapp.png")
+          &.social-link-teleg
+            background: url("../img/general/tel.png")
+          &.social-link-vib
+            background: url("../img/general/vib.png")
+          &:last-child
+            margin-right: 0
+          &:hover
+            transform: scale(1.4)
+  .mini-basket
+    display: none
+  .header-basket_wrap
+    display: inline-block
+    vertical-align: top
+    position: relative
+    padding: 20px 30px
+    background-color: $lightPinkColor
+    border-radius: 40px
+    font-weight: bold
+    float: right
+    &:after
+      content: ''
+      overflow: hidden
+    .main-basket
+      display: block
+      padding-left: 50px
+      font-size: 15px
+      position: relative
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        background: url("../img/general/basket.png")
+        width: 36px
+        height: 36px
+        background-size: 100%
+        left: 0
+.main-nav
+  background-color: $pinkColor
+  padding: 5px 10px 5px 30px
+  border-radius: 5px
+  margin-bottom: 20px
+  font-family: PTSerifItalic, sans-serif
+  width: 100%
+  .nav-block
+    display: inline-block
+    margin-right: 50px
+    li
+      display: inline-block
+      margin-right: 10px
+      &:last-child
+        margin-right: 0
+    a
+      display: block
+      color: #ffffff
+      text-transform: uppercase
+      padding: 0 15px
+      line-height: 28px
+      border-radius: 7px
+      transition: all 0.3s ease-in-out
+      &.active,
+      &:hover
+        color: $pinkColor
+        background-color: #fff
+.search-area
+  position: relative
+  display: inline-block
+  width: 20%
+  transition: all 0.3s ease-in
+  float: right
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    background: url("../img/general/search.png")
+    width: 16px
+    height: 16px
+    background-size: 100%
+    right: 3px
+    top: 6px
+    overflow: hidden
+  input
+    width: 100%
+    padding: 0 20px
+    border: none
+    border-radius: 20px
+    line-height: 28px
+
+

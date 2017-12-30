@@ -1,0 +1,118 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Главная страница'
+block content
+    section.advanteges
+        .advantage-item
+            .advantage-item_inner
+                span.adv-icon.adv-icon_car
+                h2.adv-title Быстрая доставка<br> заказов
+                a(href="https://shatyliuk.github.io/parfumer/delivery") Про доставку
+        .advantage-item
+            .advantage-item_inner
+                span.adv-icon.adv-icon_wallet
+                h2.adv-title Минимальный заказ<br> всего 10$
+                a(href="https://shatyliuk.github.io/parfumer/delivery") Подробнее
+        .advantage-item
+            .advantage-item_inner
+                span.adv-icon.adv-icon_time
+                h2.adv-title Сборка вашего заказа<br> занимает 1-2 дня
+                a(href="https://shatyliuk.github.io/parfumer/delivery") Подробнее
+    section.main-slider
+        .owl-carousel
+            .slide
+                img(src='static/img/content/slide_1.jpg')
+            .slide
+                img(src='static/img/content/slide_1.jpg')
+            .slide
+                img(src='static/img/content/slide_1.jpg')
+            .slide
+                img(src='static/img/content/slide_1.jpg')
+            .slide
+                img(src='static/img/content/slide_1.jpg')
+    section.category-menu
+        a(href="https://shatyliuk.github.io/parfumer/categories") Женская парфюмерия
+        a(href="https://shatyliuk.github.io/parfumer/categories") Мужская парфюмерия
+        a(href="https://shatyliuk.github.io/parfumer/categories") Косметика
+    section.main-content
+        include ../modules/aside
+        main
+            .main-filter
+                .main-filter_left
+                    a(href="javascript:void(0);").active Парфюмерия
+                    a(href="javascript:void(0);") Косметика
+                .main-filter_right
+                    .selection
+                        select
+                            option(selected=disable) Категория
+                            option(value='1') Категория 1
+                            option(value='2') Категория 2
+                            option(value='3') Категория 3
+                    .selection
+                        select
+                            option(selected=disable) Категория
+                            option(value='1') Категория 1
+                            option(value='2') Категория 2
+                            option(value='3') Категория 3
+                    .selection
+                        select
+                            option(selected=disable) Категория
+                            option(value='1') Категория 1
+                            option(value='2') Категория 2
+                            option(value='3') Категория 3
+                    a.btn.btn_orange Применить
+            .sandwich
+                .nav-icon
+                    span
+                    span
+                    span
+                span.sandwich-title Каталог
+            .main-content_products
+                .products.products-sale
+                    h3 Распродажа
+                    a(href='https://shatyliuk.github.io/parfumer/product')
+                        .product-item
+                            img(src='static/img/content/1_215-200x200.jpg')
+                            span Clive Christian V for Men 50 мл (тестер)
+                            span.price 100$
+                            button.btn.btn_orange купить
+                    a(href='https://shatyliuk.github.io/parfumer/product')
+                        .product-item
+                            img(src='static/img/content/1_215-200x200.jpg')
+                            span Clive Christian V for Men 50 мл (тестер)
+                            span.price 100$
+                            button.btn.btn_orange купить
+                    a(href='https://shatyliuk.github.io/parfumer/product')
+                        .product-item
+                            img(src='static/img/content/1_215-200x200.jpg')
+                            span Clive Christian V for Men 50 мл (тестер)
+                            span.price 100$
+                            button.btn.btn_orange купить
+                .products.products-new
+                    h3 Новинки
+                    a(href='https://shatyliuk.github.io/parfumer/product')
+                        .product-item
+                            img(src='static/img/content/1_215-200x200.jpg')
+                            span Clive Christian V for Men 50 мл (тестер)
+                            span.price 100$
+                            button.btn.btn_orange купить
+                    a(href='https://shatyliuk.github.io/parfumer/product')
+                        .product-item
+                            img(src='static/img/content/1_215-200x200.jpg')
+                            span Clive Christian V for Men 50 мл (тестер)
+                            span.price 100$
+                            button.btn.btn_orange купить
+                    a(href='https://shatyliuk.github.io/parfumer/product')
+                        .product-item
+                            img(src='static/img/content/1_215-200x200.jpg')
+                            span Clive Christian V for Men 50 мл (тестер)
+                            span.price 100$
+                            button.btn.btn_orange купить
+            .main-text
+                h4 Парфюмерия и косметика оптом недорого - интернет-магазин.
+                p Ищете интернет-магазин недорогой косметики и парфюмерии? Добро пожаловать к нам! Здесь вы найдете продукцию в стиле мировых брендов в широком ассортименте.
+                p Интересует дешевая парфюмерия и косметика оптом? Наш интернет-магазин предлагает настоящее искушение для всех желающих и клиентам вашего магазина это понравится. В нашем каталоге даже самый взыскательный покупатель найдет богатое многообразие приятных запахов. Мы готовы предложить идеальное соотношение цены и качества, а также достойный уровень обслуживания.
+            .main-text
+                h4 Оптовый интернет магазин дешевой парфюмерии и косметики.
+                p Аромат – это своеобразное измерение начала каждого из нас, а удачно подобранный парфюм может послужить завершающим аккордом в безупречном образе. Мы не просто занимаемся продажей парфюмерии для мужчин и женщин. Для нас это прекрасная возможность создать собственную философию, в которой изысканный аромат является неотъемлемой частью совершенного облика. Среди огромнейшего ассортимента товаров, вы найдете продукцию в стиле таких известных брендов, как Chanel. Dior, Lacoste, Gucci и других популярных марок.

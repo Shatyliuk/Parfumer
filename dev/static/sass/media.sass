@@ -1,0 +1,446 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px)
+  .header-block
+    .header-logo
+      margin-right: 104px
+    .header-contacts
+      .header-contacts_left
+        margin-right: 60px
+      .header-contacts_right
+        margin-right: 60px
+  .main-nav
+    margin-right: 30px
+    .nav-block
+      font-size: 14px
+      li
+        margin-right: 0
+  .advanteges
+    .advantage-item
+      width: 31%
+      vertical-align: top
+  .category-menu
+    a
+      width: 31%
+  .main-content
+    aside
+      width: 270px
+      margin-right: 10px
+    main
+      width: 74%
+      .main-filter
+        display: inline-block
+        padding: 5px 5px
+        .main-filter_left
+          padding: 5px 10px 5px 0
+          margin-right: 10px
+          a
+            padding: 5px
+          a:first-child
+            margin-right: 5px
+        .main-filter_right
+          .selection
+            margin-right: 50px
+            select
+              padding: 5px
+          .btn
+            padding: 1px 5px 2px 5px
+  .advanteges
+    .advantage-item
+      .advantage-item_inner
+        padding: 10px 0 15px 85px
+
+
+@media only screen and (max-width: 1200px)
+  .header-block
+    .header-logo
+      margin-right: 55px
+    .header-contacts
+      .header-contacts_left
+        margin-right: 55px
+      .header-contacts_right
+        margin-right: 65px
+    .header-basket_wrap
+      padding: 15px 5px
+  .main-nav
+    .nav-block
+      font-size: 14px
+      li
+        margin-right: 0
+      a
+        padding: 0 5px
+  .advanteges
+    .advantage-item
+      .advantage-item_inner
+        padding: 10px 0 15px 90px
+        h2
+          font-size: 20px
+        .adv-icon
+          &.adv-icon_car
+            left: 5px
+          &.adv-icon_wallet
+            left: 20px
+          &.adv-icon_time
+            left: 15px
+  .main-content
+    aside
+      width: 250px
+    main
+      width: 72%
+      .main-filter
+        .main-filter_right
+          .selection
+            margin-right: 15px
+  .products
+    .product-item
+      img
+        width: 140px
+      button
+        left: 30%
+
+/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1100px)
+  .header-block
+    .header-logo
+      margin-right: 20px
+    .header-contacts
+      .header-contacts_left
+        margin-right: 20px
+      .header-contacts_right
+        margin-right: 20px
+    .header-basket_wrap
+      padding: 15px 5px
+  .main-nav
+    .nav-block
+      font-size: 14px
+      li
+        margin-right: 0
+      a
+        padding: 0 5px
+  .advanteges
+    .advantage-item
+      .advantage-item_inner
+        padding: 10px 0 15px 75px
+        h2
+          font-size: 18px
+        .adv-icon
+          &.adv-icon_car
+            left: 5px
+          &.adv-icon_wallet
+            left: 20px
+          &.adv-icon_time
+            left: 15px
+  .main-content
+    aside
+      width: 250px
+    main
+      width: 70%
+      .main-filter
+        font-size: 14px
+        .main-filter_right
+          .selection
+            margin-right: 5px
+  .products
+    .product-item
+      button
+        left: 28%
+  footer
+    .footer-bg
+      .footer-content
+        .footer-content_menu
+          .footer-list
+            .footer-list_item
+              width: 32%
+@media only screen and (max-width: 992px)
+  .header-block
+    position: relative
+    .header-logo
+      margin-right: 40px
+      a
+        font-size: 64px
+      span
+        font-size: 12px
+    .header-contacts
+      .header-contacts_left
+        a
+          font-size: 18px
+    .mini-basket
+      display: inline-block
+      position: absolute
+      text-align: center
+      background: url("../img/general/basket.png")
+      width: 36px
+      height: 36px
+      background-size: 100%
+      top: 0
+      float: right
+      &:after
+        content: ''
+        overflow: hidden
+      span
+        color: #FFFFFF
+        display: block
+        margin-top: 15px
+    .header-basket_wrap
+      display: none
+  .main-nav
+    padding: 5px 10px 7px 10px
+    position: relative
+    .nav-block
+      display: none
+      text-align: center
+      width: 200px
+      position: absolute
+      top: 45px
+      z-index: 5
+      padding: 10px
+      background-color: $pinkColor
+      color: #FFFFFF
+      ul
+        li
+          display: block
+    .nav-icon
+      display: inline-block
+      height: 25px
+    .search-area
+      display: inline-block
+      width: 40%
+      input
+        padding: 2px 20px
+  .advanteges
+    .advantage-item
+      &:nth-child(2)
+        margin-right: 10px
+        margin-left: 10px
+      .advantage-item_inner
+        padding: 50px 5px 5px 5px
+        text-align: center
+        h2
+          font-size: 18px
+          line-height: 22px
+        .adv-icon
+          &.adv-icon_car
+            left: 30%
+            top: 10px
+          &.adv-icon_wallet
+            left: 40%
+            top: 5px
+          &.adv-icon_time
+            left: 37%
+            top: 3px
+  .category-menu
+    a
+      font-size: 20px
+  .main-content
+    position: relative
+    aside
+      position: absolute
+      z-index: 5
+      width: 250px
+      top: 100px
+      .aside-nav
+        display: none
+        padding: 20px
+        margin-bottom: 5px
+        .aside-nav_title
+          width: 100%
+          cursor: pointer
+        ul
+          display: none
+    main
+      width: 100%
+      .main-filter
+        text-align: right
+      .sandwich
+        display: block
+      .nav-icon
+        display: inline-block
+        float: left
+        span
+          background-color: $pinkColor
+        &:after
+          content: ''
+          clear: both
+  .products
+    .product-item
+      font-size: 14px
+      button
+        width: 100%
+        left: 0
+  footer
+    .footer-bg
+      .footer-content
+        .footer-content_information
+          width: 25%
+          margin-right: 0
+        .footer-content_menu
+          width: 75%
+          .main-nav
+            .nav-block
+              right: 0
+              top: 0
+          .nav-icon
+            float: right
+            &:after
+              content: ''
+              clear: both
+          .footer-list
+            .footer-list_item
+              font-size: 14px
+
+
+
+
+/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .header-block
+    position: relative
+    text-align: center
+    .header-logo
+      margin-right: 0
+      width: 100%
+      margin-bottom: 20px
+      a
+        font-size: 60px
+      span
+        display: none
+    .header-contacts
+      .header-contacts_left
+        margin-right: 40px
+        a
+          font-size: 22px
+          display: block
+      .header-contacts_right
+        margin-right: 0
+        margin-top: 0
+        margin-bottom: 20px
+        position: relative
+  .main-nav
+    text-align: left
+    padding: 5px 10px 7px 10px
+  .advanteges
+    .advantage-item
+      width: 48%
+      &:nth-child(2)
+        margin-right: 0
+        margin-left: 10px
+        margin-bottom: 10px
+  .category-menu
+    a
+      width: 48%
+      &:nth-child(2)
+        margin-left: 10px
+        margin-right: 0
+        margin-bottom: 10px
+  .main-content
+    aside
+      top: 125px
+    main
+      .main-filter
+        text-align: center
+        .main-filter_left
+          border: none
+      .main-content_products
+        .products
+          .product-item
+            img
+              width: 120px
+  .products
+    .product-item
+      width: 45%
+  footer
+    .footer-bg
+      .footer-content
+        .footer-content_information
+          width: 30%
+        .footer-content_menu
+          width: 70%
+          .footer-list
+            .footer-list_item
+              width: 50%
+              a
+                padding: 0
+  .contacts-info
+    .contacts-info_container
+      display: block
+      width: 100%
+
+/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+  .top-block_wrap
+    .top-block
+      padding: 15px 15px
+  .header-block
+    text-align: center
+    .header-logo
+      margin-right: 0
+      margin-bottom: 20px
+    .header-contacts
+      .header-contacts_left
+        margin-right: 0
+        margin-bottom: 20px
+        a
+          display: inline-block
+        a:first-child
+          margin-right: 15px
+        a:last-child
+          margin-top: 0
+        .contact
+          display: inline-block
+          margin-right: 50px
+          vertical-align: top
+        .social-links
+          vertical-align: top
+          margin-right: 20px
+          .social-link
+            margin-top: 0
+            margin-right: 15px
+      .header-contacts_right
+        margin-bottom: 0
+  .advanteges
+    .advantage-item
+      width: 70%
+      margin-bottom: 10px
+      &:nth-child(2)
+        margin-right: 0
+        margin-left: 0
+      &:last-child
+        margin-bottom: 0
+      .advantage-item_inner
+        .adv-icon
+          &.adv-icon_car
+            left: 36%
+          &.adv-icon_wallet
+            left: 42%
+          &.adv-icon_time
+            left: 40%
+  .products
+    .product-item
+      width: 75%
+      font-size: 16px
+      img
+        width: 160px
+/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  .top-block_wrap
+    .top-block
+      padding: 15px 15px
+
+/**/
+
+

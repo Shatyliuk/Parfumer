@@ -1,0 +1,76 @@
+.main-content
+  main
+    width: 100%
+    h1
+      font-family: PTSerifItalic, sans-serif
+      font-size: 24px
+      padding-bottom: 10px
+      border-bottom: 1px solid $pinkColor
+      margin-bottom: 10px
+    .category-nav
+      font-size: 18px
+      margin-bottom: 40px
+      .category-sort
+        display: inline-block
+        span
+          margin-right: 5px
+          cursor: pointer
+        span.active
+          color: $pinkColor
+        .sort-price
+          display: inline-block
+          position: relative
+          .sort
+            border: solid transparent
+            position: absolute
+          .sort-price_up
+            border-width: 8px 5px 0 5px
+            border-top-color: #000000
+            top: 8px
+            left: 65px
+            &:hover
+              border-top-color: $pinkColor
+          .sort-price_down
+            border-width: 0 5px 8px 5px
+            border-bottom-color: #000000
+            top: 8px
+            left: 77px
+            &:hover
+              border-bottom-color: $pinkColor
+      .product-navigation
+        display: inline-block
+        float: right
+        &:after
+          content: ''
+          clear: both
+        ul
+          display: inline-block
+          li
+            display: inline-block
+            margin: 0 3px
+            a
+              display: block
+              width: 25px
+              height: 25px
+              line-height: 25px
+              border-radius: 50%
+              text-align: center
+              &:hover
+                background-color: $pinkColor
+                color: #ffffff
+    .main-content_products
+      .products
+        .category_product
+          margin-bottom: 60px
+          img
+            margin-bottom: 0
+          span
+            margin-bottom: 0
+          a.underline
+            color: #666
+            text-decoration: underline
+            display: block
+            margin-bottom: 20px
+          .amount
+            span
+              display: inline-block

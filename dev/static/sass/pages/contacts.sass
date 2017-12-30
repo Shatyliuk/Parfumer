@@ -1,0 +1,63 @@
+.contacts-info
+  .contacts-info_container
+    display: inline-block
+    width: 50%
+    vertical-align: top
+  .contacts-info_left
+    padding: 5px
+    .contacts-info_item
+      padding: 40px 20px 40px 100px
+      background-color: $lightPinkColor
+      margin-bottom: 10px
+      position: relative
+      font-size: 20px
+      .contacts-icon
+        background-size: 100%
+        position: absolute
+        &.contacts-icon_map
+          background: url("../img/general/map.png") no-repeat
+          width: 34px
+          height: 48px
+          left: 30px
+          top: 25px
+        &.contacts-icon_phone
+          background: url("../img/general/phone.png") no-repeat
+          width: 46px
+          height: 46px
+          left: 25px
+          top: 30px
+        &.contacts-icon_mail
+          background: url("../img/general/mail.png") no-repeat
+          width: 52px
+          height: 42px
+          left: 25px
+          top: 30px
+        &.contacts-icon_time
+          background: url("../img/general/time.png") no-repeat
+          width: 54px
+          height: 50px
+          left: 25px
+          top: 25px
+  .contacts-info_right
+    padding: 5px
+    .contact-form
+      background-color: $lightPinkColor
+      padding: 40px 50px
+      h2
+        margin-bottom: 20px
+      input,
+      textarea
+        width: 100%
+        border-radius: 20px
+        padding: 0 10px
+        line-height: 40px
+        margin-bottom: 10px
+        border: 1px solid #fff
+      button
+        width: 100%
+        border: 1px solid $orangeColor
+  .contacts-map
+    padding: 5px
+    iframe
+      width: 100%
+

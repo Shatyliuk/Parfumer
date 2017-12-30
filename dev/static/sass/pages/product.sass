@@ -1,0 +1,73 @@
+.product-info
+  padding-top: 20px
+  vertical-align: top
+  margin-bottom: 40px
+  .product-info_left
+    display: inline-block
+    width: 50%
+    vertical-align: top
+    img
+      width: 100%
+  .product-info_right
+    display: inline-block
+    vertical-align: top
+    width: 50%
+    ul
+      margin-bottom: 25px
+      li
+        margin-bottom: 10px
+        span
+          display: inline-block
+          &:first-child
+            width: 100%
+            max-width: 160px
+          &:last-child
+            font-weight: bold
+        .amount
+          span
+            margin-right: 0
+          .amount-count
+            .amount-count_up
+              position: absolute
+              font-size: 19px
+              left: -26px
+              top: -1px
+              cursor: pointer
+    .price
+      display: block
+      color: $orangeColor
+      font-size: 40px
+      margin-bottom: 20px
+      line-height: normal
+    .product-info_button
+      a
+        padding: 5px 20px 5px 20px
+.product-info_tabs
+  margin-bottom: 30px
+  .tab-links_wrapper
+    font-family: PTSerifItalic, sans-serif
+    font-weight: bold
+    li
+      display: inline-block
+      padding: 15px
+      cursor: pointer
+      font-size: 24px
+      transition: all 0.3s ease-in-out
+      &.active,
+      &:hover
+        background-color: $orangeColor
+        a
+          color: #ffffff
+      &.active:first-child
+        border-radius: 5px 0 0 0
+      &.active:last-child
+        border-radius: 0 5px 0 0
+  .tabs-content_wrapper
+    .tabs-content
+      padding: 30px
+      background-color: $lightPinkColor
+      border-radius: 0 0 5px 5px
+      p
+        margin-bottom: 20px
+      p:last-child
+        margin-bottom: 0

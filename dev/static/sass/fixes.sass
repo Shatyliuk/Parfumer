@@ -1,0 +1,32 @@
+//firefox
+@-moz-document url-prefix()
+  header
+    .header-block
+      .header-logo
+        margin-right: 119px
+  .main-content
+    main
+      .main-filter
+        .main-filter_left
+          margin-right: 30px
+//edge
+@supports (-ms-ime-align: auto) and (color: unset)
+  header
+    .header-block
+      .header-logo
+        margin-right: 114px
+//IE
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  header
+    .header-block
+      .header-logo
+        margin-right: 81px
+    .search-area input
+      line-height: normal
+      padding: 3px 0 4px 10px
+  .main-content
+    main
+      .main-filter
+        padding: 10px 10px 7px 5px
+        .main-filter_left
+          margin-right: 10px

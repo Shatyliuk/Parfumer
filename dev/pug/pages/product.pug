@@ -1,0 +1,93 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Clive Christian V for Men 50 мл (тестер)'
+block content
+    section.category-menu.category-menu_orange
+        a(href="https://shatyliuk.github.io/parfumer/categories") Женская парфюмерия
+        a(href="https://shatyliuk.github.io/parfumer/categories") Мужская парфюмерия
+        a(href="https://shatyliuk.github.io/parfumer/categories") Косметика
+    section.main-content
+        include ../modules/aside
+        main
+            include ../modules/breadcrumb
+                li
+                    a(href='javascript:void(0);') Парфюмерия
+                li
+                    a(href='javascript:void(0);').active Clive Christian V for Men 50 мл (тестер)
+            .sandwich
+                .nav-icon
+                    span
+                    span
+                    span
+                span.sandwich-title Каталог
+            h1 Clive Christian V for Men 50 мл (тестер)
+            .product-info
+                .product-info_left
+                    a(href='static/img/content/1_215-500x550.jpg').popup-link
+                        img(src='static/img/content/1_215-500x550.jpg')
+                .product-info_right
+                    span.price 100$
+                    ul
+                        li
+                            span Код товара:
+                            span 50023
+                        li
+                            span Для кого:
+                            span Унисекс
+                        li
+                            span Код товара:
+                            span ОАЭ
+                        li
+                            span Производитель:
+                            span Clive Christian
+                        li
+                            span Наличие:
+                            span В наличии
+                        li
+                            .amount
+                                span Количество:
+                                .amount-count
+                                    span.amount-count_up +
+                                    input(type='text' value='1').current
+                                    span.amount-count_down -
+                    .product-info_button
+                        a(href='javascript:void(0);').btn.btn_orange Купить
+            .product-info_tabs(id='tabs')
+                ul.tab-links_wrapper
+                    li
+                        a(href='#description').tabs-links Описание
+                    li
+                        a(href='#delivery').tabs-links Доставка
+                .tabs-content_wrapper
+                    .tabs-content(id='description')
+                        p
+                            strong Clive Christian V for Men 50 мл (тестер)
+                            |- новый аромат для мужчин от известного английского парфюмерного бренда Clive Christian. Парфюмерная композиция Clive Christian V for Men 50 мл была создана в 2012 году и вошла в группу ароматов восточные древесные. Это очень роскошный, утонченный аромат, созданный для избранных мужчин.
+                        p Композиция аромата Clive Christian V for Men 50 мл открывается верхними нотами душистого элеми, искрящихся свежестью цитрусов, острого черного и пикантного розового перца, жгучего мускатного ореха, живого и утонченного ириса, тёплой серой амбры, густого олибанума, величественной древесины белого кедра, древесно-пряного ветивера, аристократической древесины агар и пудровой ванили.
+                    .tabs-content(id='delivery')
+                        p
+                            strong Clive Christian V for Men 50 мл (тестер)
+                            |- новый аромат для мужчин от известного английского парфюмерного бренда Clive Christian. Парфюмерная композиция Clive Christian V for Men 50 мл была создана в 2012 году и вошла в группу ароматов восточные древесные. Это очень роскошный, утонченный аромат, созданный для избранных мужчин.
+                        p Композиция аромата Clive Christian V for Men 50 мл открывается верхними нотами душистого элеми, искрящихся свежестью цитрусов, острого черного и пикантного розового перца, жгучего мускатного ореха, живого и утонченного ириса, тёплой серой амбры, густого олибанума, величественной древесины белого кедра, древесно-пряного ветивера, аристократической древесины агар и пудровой ванили.
+            .main-content_products
+                .products.products-sale
+                    h3 Похожие товары
+                    a(href='https://shatyliuk.github.io/parfumer/product')
+                        .product-item
+                            img(src='static/img/content/1_215-200x200.jpg')
+                            span Clive Christian V for Men 50 мл (тестер)
+                            span.price 100$
+                            button.btn.btn_orange купить
+                    a(href='https://shatyliuk.github.io/parfumer/product')
+                        .product-item
+                            img(src='static/img/content/1_215-200x200.jpg')
+                            span Clive Christian V for Men 50 мл (тестер)
+                            span.price 100$
+                            button.btn.btn_orange купить
+                    a(href='https://shatyliuk.github.io/parfumer/product')
+                        .product-item
+                            img(src='static/img/content/1_215-200x200.jpg')
+                            span Clive Christian V for Men 50 мл (тестер)
+                            span.price 100$
+                            button.btn.btn_orange купить

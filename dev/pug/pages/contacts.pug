@@ -1,0 +1,46 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Контакты'
+block content
+    section.category-menu.category-menu_orange
+        a(href="https://shatyliuk.github.io/parfumer/categories") Женская парфюмерия
+        a(href="https://shatyliuk.github.io/parfumer/categories") Мужская парфюмерия
+        a(href="https://shatyliuk.github.io/parfumer/categories") Косметика
+    section.main-content
+        include ../modules/aside
+        main
+            include ../modules/breadcrumb
+                li
+                    a(href='https://shatyliuk.github.io/parfumer/contacts').active Контакты
+            .sandwich
+                .nav-icon
+                    span
+                    span
+                    span
+                span.sandwich-title Каталог
+            h1 Контакты
+            .contacts-info
+                .contacts-info_container.contacts-info_left
+                    .contacts-info_item
+                        span.contacts-icon.contacts-icon_map
+                        p г.Город
+                    .contacts-info_item
+                        span.contacts-icon.contacts-icon_phone
+                        a(href='tel:+01234567890') +01234567890
+                    .contacts-info_item
+                        span.contacts-icon.contacts-icon_mail
+                        p Улица 105, кв. 105
+                    .contacts-info_item
+                        span.contacts-icon.contacts-icon_time
+                        a(href='mailto:contacts@parfumer.com') contacts@parfumer.com
+                .contacts-info_container.contacts-info_right
+                    form.contact-form
+                        h2 Отправить сообщение
+                        input(type='text', name='name', placeholder='Имя')
+                        input(type='text', name='email', placeholder='Email')
+                        input(type='text', name='phone', placeholder='Телефон')
+                        textarea(placeholder='Сообщение')
+                        button.btn.btn_orange Отправить
+                .contacts-map
+                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.6878258749!2d30.252510580222026!3d50.401699045468646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1509544445252" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)

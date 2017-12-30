@@ -1,0 +1,47 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Доставка'
+block content
+    section.category-menu.category-menu_orange
+        a(href="https://shatyliuk.github.io/parfumer/categories") Женская парфюмерия
+        a(href="https://shatyliuk.github.io/parfumer/categories") Мужская парфюмерия
+        a(href="https://shatyliuk.github.io/parfumer/categories") Косметика
+    section.main-content
+        include ../modules/aside
+        main
+            include ../modules/breadcrumb
+                li
+                    a(href='javascript:void(0);').active Доставка
+            .sandwich
+                .nav-icon
+                    span
+                    span
+                    span
+                span.sandwich-title Каталог
+            h1 Доставка
+            .delivery-item
+                span.delivery-icon.delivery-icon_moto
+                h2 Доставка по Городу
+                ul
+                    li — Осуществляется при сумме заказа более 2000 рублей.
+                    li — При сумме заказа от 2000 до 4000 рублей, — стоимость доставки составляет 200 рублей.
+                    li — Осуществляется бесплатно, при сумме заказа более 4000 рублей.
+            .delivery-item
+                span.delivery-icon.delivery-icon_car
+                h2 Доставка за Город в пределах 15км.
+                ul
+                    li — Осуществляется при сумме заказа более 2000 рублей.
+                    li — При сумме заказа от 2000 до 4000 рублей, — стоимость доставки составляет 200 рублей.
+                    li — Осуществляется бесплатно, при сумме заказа более 4000 рублей.
+            h3 Доставка в другие города осуществляется при сумме заказа от 2000 рублей двумя способами:
+            .delivery-item
+                span.delivery-icon.delivery-icon_map
+                h2 Доставка в пункт выдачи заказа
+                p Для осуществления доставки Вам необходимо указать регион, город и адрес удобного для вас пункта выдачи (Pickpoint). Стоимость доставки рассчитывается автоматически в зависимости от Вашего выбора.
+                p Срок доставки в ближайшем подмосковье от 1 до 5 дней, а в другие города РФ от 4 до 15 дней в зависмости от выбранного города. Доставка в PickPoint осуществляется бесплатно при сумме заказа более 5000 рублей.
+            .delivery-item
+                span.delivery-icon.delivery-icon_delivery
+                h2 Курьерская доставка
+                p Для осуществления доставки Вам необходимо указать регион, город, индекс и адрес доставки и комментарий (если это необходимо).
+                p Отправка производится один раз в неделю — среду. Чтобы Ваш заказ попал в отгрузку — заказ необходимо оформить до вторника включительно, до 15:00 часов.

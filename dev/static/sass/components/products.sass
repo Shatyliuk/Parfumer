@@ -1,0 +1,42 @@
+.products
+  margin-bottom: 40px
+  text-align: center
+  a
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+  h3
+    text-align: center
+    padding-bottom: 20px
+    margin-bottom: 20px
+    border-bottom: 2px solid $pinkColor
+    font-size: 22px
+  .product-item
+    display: inline-block
+    vertical-align: top
+    width: 32%
+    margin-bottom: 20px
+    padding: 40px 30px 30px
+    min-height: 370px
+    text-align: center
+    border: 5px solid $lightPinkColor
+    border-radius: 5px
+    transition: all 0.2s ease-in
+    position: relative
+    &:hover
+      border-color: $orangeColor
+    img
+      margin-bottom: 35px
+    span
+      display: block
+      margin-bottom: 20px
+      font-weight: bold
+      font-family: PTSerifItalic, sans-serif
+    .price
+      color: $orangeColor
+      font-size: 24px
+    button
+      position: absolute
+      bottom: -16px
+      left: 32%
+      border: none
